@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <classes>
+  <class name="Accounts.TestScript02_parameter"/>
+  <parameter name="url"                    value="https://login.salesforce.com/"/>
+      <parameter name="username"               value="obcandidateone1-mua6@force.com"/>
+      <parameter name="password"               value="Onebill@123"/>
+      <parameter name="params"               value="Account Name=TestA|Phone=9999999999|Fax=9090909090|Website=www.candidateOne.com|Type=Prospect|Industry=Finance|Employees=75|Annual Revenue=100M|Description=There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain…|
+  Billing Street=3080 Olcott Street|Billing City=Santa Clara|Billing State/Province= CA| Billing Zip/Postal Code=95054|Billing Country=USA|Copy Billing Address to Shipping Address=checked"/>
+  
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

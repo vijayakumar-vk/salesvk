@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Test>
+	<LoginPage>
+
+		<UsernameTextField>username</UsernameTextField>
+		<PasswordtextField>password</PasswordtextField>
+		<LoginButton>Login</LoginButton>
+
+	</LoginPage>
+
+
+	<HomePage>
+
+		<SearchAppsDot>//div[@class='slds-icon-waffle']</SearchAppsDot>
+		<ViewAllButton>//button[text()='View All']</ViewAllButton>
+		<SearchAppTextField>//input[@placeholder='Search apps or items...']</SearchAppTextField>
+		<AccountsButton>//mark[text()='Accounts']</AccountsButton>
+		<UserButton>//img[@class='icon noicon']</UserButton>
+		<LogoutButton>//a[text()='Log Out']</LogoutButton>
+		<AppLauncherVerification>//h2[text()='App Launcher']</AppLauncherVerification>
+		<RecentlyViewedVerification>//span[text()='Recently Viewed']</RecentlyViewedVerification>
+		<NewAccountVerification>//h2[text()='New Account']</NewAccountVerification>
+
+	</HomePage>
+
+
+	<AccountsPage>
+
+		<NewAccountButton>//div[text()='New']</NewAccountButton>
+		<AccountNameTextField>(//input[@type='text'])[4]</AccountNameTextField>
+		<PhoneNumber>//input[@type='tel']</PhoneNumber>
+		<Fax>//input[@data-interactive-lib-uid='11']</Fax>
+		<Website>//input[@type='url']</Website>
+		<Type>//a[@class='select']</Type>
+		<Prospect>//a[text()='Prospect']</Prospect>
+		<Industry>(//a[@class='select'])[2]</Industry>
+		<Finance>//a[text()='Finance']</Finance>
+		<Employees>//input[@class='input uiInputSmartNumber']</Employees>
+		<AnnualRevenue>//input[@data-interactive-lib-uid='17']</AnnualRevenue>
+		<Description>//textarea[@class=' textarea']</Description>
+		<BillingStreet>//textarea[@placeholder='Billing Street']</BillingStreet>
+		<BillingCity>//input[@placeholder='Billing City']</BillingCity>
+		<BillingState>//input[@placeholder='Billing State/Province']</BillingState>
+		<BillingZipCode>//input[@placeholder='Billing Zip/Postal Code']</BillingZipCode>
+		<BillingCountry>//input[@placeholder='Billing Country']</BillingCountry>
+		<CopyBillingAddressToShippingAddress>//span[text()='Copy Billing Address to Shipping Address']</CopyBillingAddressToShippingAddress>
+		<Save>(//span[text()='Save'])[2]</Save>
+		
+		
+		<AccountNameVerification>//span[@class='custom-truncate uiOutputText']</AccountNameVerification>
+		<PhoneVerification>//lightning-formatted-phone[@data-output-element-id='output-field']</PhoneVerification>
+		<WebsiteVerification>//lightning-formatted-url[@data-output-element-id='output-field']</WebsiteVerification>
+		<IndustryVerification>//lightning-formatted-text[text()='Finance']</IndustryVerification>
+		<FaxVerification>//a[text()='(909) 090-9090']</FaxVerification>
+		<TypeVerification>//lightning-formatted-text[text()='Prospect']</TypeVerification>
+		<EmployeeVerification>//lightning-formatted-number[text()='75']</EmployeeVerification>
+		<AnnualRevenueVerification>//lightning-formatted-text[text()='$100,000,000']</AnnualRevenueVerification>
+		<DescriptionVerification>//lightning-formatted-text[text()='There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain…']</DescriptionVerification>
+		<BillingStreetVerification>//div[text()='3080 Olcott Street']</BillingStreetVerification>
+		<BillingCountryVerification>//div[text()='USA']</BillingCountryVerification>
+
+
+	</AccountsPage>
+
+</Test>
+
+
+
